@@ -6,14 +6,18 @@ public class Stack_StackUsingLL<T> {
 
 	public void push(T element) {
 		Node<T> curr=new Node<T>(element);
-		if(head==null) {
-			head=curr;
-			size++;
-		}else {
-			curr.next=head;
-			head=curr;
-			size++;
-		}
+// 		if(head==null) {
+// 			head=curr;
+// 			size++;
+// 		}else {
+// 			curr.next=head;
+// 			head=curr;
+// 			size++;
+// 		}
+		curr.next=head;
+		head=curr;
+		size++;
+		
 
 	}
 	public T pop() throws StackEmptyException {
