@@ -27,7 +27,7 @@ private void doubleArray() {
 	int index=0;
 	for(int i=frontIndex;i<temp.length;i++)
 		data[index++]=temp[i];
-	for(int i=0;i<frontIndex-1;i++)
+	for(int i=0;i<=frontIndex-1;i++)
 		data[index++]=temp[i];
 	frontIndex=0;
 	rearIndex=temp.length-1;
